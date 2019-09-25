@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './Navigation.css';
-import logohorizontal from '../img/logohorizontal.png'
+import logo from '../img/logo@2x.png'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Navigation extends Component {
     render() {
         return ( 
             <nav className='navbar'>
-            <div className="logohorizontal">
-                <Link to="/"><img src= { logohorizontal } className="logoHorizontal" alt="logo" /></Link>
+            <div className="logo">
+                <Link to="/"><img src= { logo } className="logo" alt="logo" /></Link>
             </div>
 
             <div className="navLinks">
