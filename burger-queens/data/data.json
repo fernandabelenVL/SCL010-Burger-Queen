@@ -4,25 +4,25 @@
             "id": 1,
             "product": "Café americano",
             "price": 500,
-            "img": ""
+            "img": "src/img/ico-coffe.svg"
         },
         {
             "id": 2,
             "product": "Café con leche",
             "price": 700,
-            "img": ""
+            "img": "src/img/ico-coffe.svg"
         },
         {
             "id": 3,
             "product": "Sandwich de jamón y queso",
             "price": 1000,
-            "img": ""
+            "img": "src/img/ico-sandwich.svg"
         },
         {
             "id": 4,
             "product": "Jugo natural",
             "price": 700,
-            "img":""
+            "img":"src/img/ico-juice.svg"
         }
     ],
 
@@ -31,85 +31,85 @@
             "id": 5,
             "product": "Hamburguesa Pollo Simple",
             "price": 1500,
-            "img":""
+            "img":"burger-queens/src/img/ico-single@2x.png"
         },
         {
             "id": 6,
             "product": "Hamburguesa Vacuno Simple",
             "price": 1500,
-            "img":""
+            "img":"burger-queens/src/img/ico-single@2x.png"
         },
         {
             "id": 7,
             "product": "Hamburguesa Vegetariana Simple",
             "price": 1500,
-            "img":""
+            "img":"burger-queens/src/img/ico-single@2x.png"
         },
         {
             "id": 8,
             "product": "Hamburguesa Pollo Doble",
             "price": 2500,
-            "img":""
+            "img":"burger-queens/src/img/ico-double.png"
         },
         {
             "id": 9,
             "product": "Hamburguesa Vacuno Doble",
             "price": 2500,
-            "img":""
+            "img":"burger-queens/src/img/ico-double.png"
         },
         {
             "id": 10,
             "product": "Hamburguesa Vegetariana Doble",
             "price": 2500,
-            "img":""
+            "img":"burger-queens/src/img/ico-double.png"
         },
         {
             "id": 11,
             "product": "Huevo",
             "price": 500,
-            "img":""
+            "img":"burger-queens/src/img/ico-eggs.svg"
         },
         {
             "id": 12,
             "product": "Queso",
             "price": 500, 
-            "img":""
+            "img":"burger-queens/src/img/ico-cheese.svg"
         },
         {
             "id": 13,
             "product": "Papas Fritas",
             "price": 500,
-            "img":""
+            "img":"burger-queens/src/img/ico-fries.svg"
         },
         {
             "id": 14,
             "product": "Onion Rings",
             "price": 500,
-            "img": ""
+            "img": "burger-queens/src/img/ico-onions.svg"
         },
         {
             "id": 15,
             "product": "Agua 500ml",
             "price": 500,
-            "img":""
+            "img":"burger-queens/src/img/ico-water-small.svg"
         },
         {
             "id": 16,
             "product": "Agua 750ml",
             "price": 800,
-            "img":""
+            "img":"burger-queens/src/img/ico-water-big.svg"
         },
         {
             "id": 17,
             "product": "Bebida 500ml",
             "price": 700,
-            "img":""
+            "img":"burger-queens/src/img/ico-soda-small.svg"
         },
         {
             "id": 18,
             "product": "Bebida 750ml",
             "price": 1000,
-            "img":""
+            "img":"burger-queens/src/img/ico-soda.svg"
         }
     ]
 }
