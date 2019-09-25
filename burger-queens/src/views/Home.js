@@ -20,9 +20,12 @@ function Home() {
 					<p>Para empezar selecciona si eres Mesero o Cocina</p>				
 				</div>
 
-				<Link to="/menu"> <button type="button"> MESERO </button></Link>
-				<Link to="/kitchen"><button type="button">COCINA</button></Link>
-			</div>
+				<div className= "button">
+					<Link to="/menu"> <button  className="waiter" type="button"> MESERO </button></Link>
+					<Link to="/kitchen"><button className="kitchen" type="button">COCINA</button></Link>
+				</div>	
+		</div>
+
 		</div>       
 	)
 }
