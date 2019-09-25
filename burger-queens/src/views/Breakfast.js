@@ -1,9 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import data from '../data';
+import data from '../data/data.json';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
-
 
 function Breakfast() {
     return (
@@ -12,8 +10,8 @@ function Breakfast() {
         <Link to="/breakfast"> <button type="button">DESAYUNO</button></Link>
         <Link to="/lunch"><button type="button">ALMUERZO Y CENA</button></Link>
 
-        {data.breakfast.map((e =>
-        <Button product={e.data.breakfast.product}/>
+        {data.Breakfasts.map((e =>
+        <button product={e.product} price={e.price} ></button>
         ))}
         </container>
         )
