@@ -7,7 +7,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
 }

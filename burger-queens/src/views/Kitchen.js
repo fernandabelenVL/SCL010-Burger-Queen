@@ -3,7 +3,7 @@ import Navigation from '../components/Navigation';
 
 function Kitchen() {
     return (
-       <Navigation  title="Home"/>
+        <Navigation home="INICIO" pending="PENDIENTES" records="HISTORIAL"/>
     )
 }
 

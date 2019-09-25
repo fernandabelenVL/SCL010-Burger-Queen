@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import { Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-class Button extends Component {
+
+class Buttons extends Component {
     render() {
-        return ( 
-            <span>
-            <button>
-            <a className="Btn" href="">
-            { this.props.title }
-            { this.props.href }
-            </a>
-            </button>
-            </span>    
+        return (
+    <div>
+        <Switch>
+º       <Button className="btn"> { this.props.name } </Button>
+       </Switch>
+
+    </div>
         )
     }
 }
 
-export default Button;
+export default Buttons;
