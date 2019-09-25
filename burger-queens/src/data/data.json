@@ -1,10 +1,10 @@
 {
-    "Breakfast": [
+    "Breakfasts": [
         {
             "id": 1,
             "product": "Café americano",
             "price": 500,
-            "img": "src/img/ico-coffe.svg"
+            "img": "./src/img/ico-coffe.svg"
         },
         {
             "id": 2,
@@ -26,18 +26,18 @@
         }
     ],
 
-    "Lunch": [
+    "Lunchs": [
         {
             "id": 5,
             "product": "Hamburguesa Pollo Simple",
             "price": 1500,
-            "img":"burger-queens/src/img/ico-single@2x.png"
+            "img":"../img/ico-single@2x.png"
         },
         {
             "id": 6,
             "product": "Hamburguesa Vacuno Simple",
             "price": 1500,
-            "img":"burger-queens/src/img/ico-single@2x.png"
+            "img":"../img/ico-single@2x.png"
         },
         {
             "id": 7,
@@ -67,7 +67,7 @@
             "id": 11,
             "product": "Huevo",
             "price": 500,
-            "img":"burger-queens/src/img/ico-eggs.svg"
+            "img":"../img/ico-eggs.svg"
         },
         {
             "id": 12,
@@ -79,7 +79,7 @@
             "id": 13,
             "product": "Papas Fritas",
             "price": 500,
-            "img":"burger-queens/src/img/ico-fries.svg"
+            "img":"..img/ico-fries.svg"
         },
         {
             "id": 14,
