@@ -7,7 +7,8 @@ import Kitchen from "./views/Kitchen";
 import Pedidos from './views/Pedidos'
 import Records from './views/Records'
 import Footer from './components/Footer'
-
+import Breakfast from './views/Breakfast';
+import Lunch from './views/Lunch';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/kitchen" component = { Kitchen } />
         <Route exact path="/pending" component = { Pedidos } />
         <Route exact path="/records" component = { Records } />
+        <Route exact path="/breakfast" component = { Breakfast } />
+        <Route exact path="/lunch" component = { Lunch } />
       </Switch>
     </Router>
   <Footer />
