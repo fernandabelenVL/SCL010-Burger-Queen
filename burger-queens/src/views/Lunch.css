@@ -1,0 +1,21 @@
+.menu-item{
+    background: #fff;
+    width: 155px;
+    height: 177px;
+    margin: 5px;
+    padding: 10px;
+    border-color: #EBE7E7;
+    border-radius: 5px;
+}
+
+.lunch-menu{
+    width: 50%;
+}
+
+.order-detail {
+    width: 50%;
+}
+
+.lunch-content{
+    display: flex;
+}
