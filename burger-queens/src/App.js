@@ -1,23 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Home from './views/Home'
+import Menu from "./views/Menu";
+import Kitchen from "./views/Kitchen";
+import Pedidos from './views/Pedidos'
+import Records from './views/Records'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <title>Hola Fer</title>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>We are burguer QUEENS</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App">    
+     <Router>
+      <Switch>
+        <Route exact path="/" component = { Home } />
+        <Route path="/menu" component = { Menu } />
+        <Route path="/kitchen" component = { Kitchen } />
+        <Route exact path="/pending" component = { Pedidos } />
+        <Route exact path="/records" component = { Records } />
+      </Switch>
+    </Router>
+  <Footer />
     </div>
   );
 }

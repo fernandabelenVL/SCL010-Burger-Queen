@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from "../components/Navigation";
 
-function Menu() {
+function Records() {
     return (
         <div>
             <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
-            <h1>MENU</h1>
-        </div>
+            <h1>HISTORIAL</h1>
+        </div>    
     )
 }
 
-export default Menu;
+export default Records;
