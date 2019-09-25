@@ -8,8 +8,7 @@ class Navigation extends Component {
         return ( 
             <nav className='navbar'>
             <div className="logohorizontal">
-            
-            <Link to="/"><img src={ logohorizontal } className="logoHorizontal" alt="logo" /></Link>
+                <Link to="/"><img src= { logohorizontal } className="logoHorizontal" alt="logo" /></Link>
             </div>
 
             <div className="navLinks">
