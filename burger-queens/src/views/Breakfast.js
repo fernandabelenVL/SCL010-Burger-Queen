@@ -14,19 +14,6 @@ function Breakfast() {
         <Link to="/breakfast"> <button type="button">DESAYUNO</button></Link>
         <Link to="/lunch"><button type="button">ALMUERZO Y CENA</button></Link>
 
-<<<<<<< HEAD
-        <br></br>
-    <div className="containerBreakfast">
-        <div className="breakfastProducts">
-        {menu.Breakfasts.map((e =>
-            <button className="btnBreakfast"> 
-                <img src={e.img} alt="ico"/>
-                <div> {e.product} </div>
-                <div> {e.price} </div>
-            </button>
-        ))}
-        </div>
-=======
         <Container className="breakfast-content">
                 <div className="menu-content">
                         {menu.Breakfasts.map((e =>
@@ -38,7 +25,6 @@ function Breakfast() {
                         ))}
 
                 </div>
->>>>>>> b0719f7da2798d1083d3eac60955729af28c82ae
 
                 <div className="order-detail">
                     <h1>Detalle de la orden</h1>
