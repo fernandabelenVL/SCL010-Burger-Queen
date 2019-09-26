@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import OrderDetail from '../components/OrderDetail'
 import './Lunch.css';
 import MenuItem  from '../components/MenuItem'
 import InputClient  from '../components/InputClient'
@@ -35,9 +36,7 @@ function Lunch() {
 
                 </div>
 
-                <div className="order-detail">
-                    <h1>Detalle de la orden</h1>
-                </div>
+                <OrderDetail/>
             </Container>
 
         </div>

@@ -1,0 +1,38 @@
+.order-detail{
+    background: #fff;
+    border: 1px solid #EBE7E7;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.order-title {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.total-price {
+    background: #FFCC24;
+    position: absolute; 
+    bottom: 0;
+    padding: 10px 40px;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-selected {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+}
+
+.food-selected p {
+    margin-bottom: 10px;
+}
