@@ -2,32 +2,35 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import menu from '../data/data.json';
 import './Breakfast.css';
+import MenuItem  from '../components/MenuItem'
+import { Container } from '@material-ui/core';
+
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 function Breakfast() {
     return (
-    <container>
+    <div>
         <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
         <Link to="/breakfast"> <button type="button">DESAYUNO</button></Link>
         <Link to="/lunch"><button type="button">ALMUERZO Y CENA</button></Link>
 
-        <br></br>
-    <div className="containerBreakfast">
-        <div className="breakfastProducts">
-        {menu.Breakfasts.map((e =>
-            <button className="btnBreakfast"> 
-                <div> {e.img} </div>
-                <div> {e.product} </div>
-                <div> {e.price} </div>
-            </button>
-        ))}
-        </div>
+        <Container className="breakfast-content">
+                <div className="menu-content">
+                        {menu.Breakfasts.map((e =>
+                        <MenuItem
+                        product={e.product}
+                        price={e.price}
+                        img={e.img}
+                        />
+                        ))}
 
-        <div className="itemMenu">
-            <h1>DETALLE DE LA ORDEN</h1>
-        </div>
+                </div>
+
+                <div className="order-detail">
+                    <h1>Detalle de la orden</h1>
+                </div>
+            </Container>
     </div>
-    </container>
     )
 }
 
