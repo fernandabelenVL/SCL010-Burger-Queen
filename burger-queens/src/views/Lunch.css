@@ -8,11 +8,14 @@
     border-radius: 5px;
 }
 
-.lunch-menu{
+.order-detail {
     width: 50%;
 }
 
-.order-detail {
+.menu-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 50%;
 }
 
