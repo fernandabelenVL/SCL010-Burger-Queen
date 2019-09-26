@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import './Lunch.css';
 import MenuItem  from '../components/MenuItem'
+import InputClient  from '../components/InputClient'
 import { Link } from "react-router-dom";
 import { Container } from '@material-ui/core';
 
@@ -19,6 +20,8 @@ function Lunch() {
 
             <Link to="/breakfast"> <button type="button"> DESAYUNO </button></Link>
 		    <Link to="/lunch"><button type="button"> ALMUERZO Y CENA</button></Link>
+
+            <InputClient />
 
             <Container className="lunch-content">
                 <div className="menu-content">
