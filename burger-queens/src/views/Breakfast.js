@@ -16,7 +16,7 @@ function Breakfast() {
         <div className="breakfastProducts">
         {menu.Breakfasts.map((e =>
             <button className="btnBreakfast"> 
-                <div> {e.img} </div>
+                <img src={e.img} alt="ico"/>
                 <div> {e.product} </div>
                 <div> {e.price} </div>
             </button>
