@@ -17,7 +17,7 @@ import menu from '../data/data.json';
 function Lunch() {
     return (
         <div>
-            <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
+            <Navigation home="INICIO" pending="PENDIENTES" records="HISTORIAL"/>
 
             <Link to="/breakfast"> <button type="button"> DESAYUNO </button></Link>
 		    <Link to="/lunch"><button type="button"> ALMUERZO Y CENA</button></Link>
