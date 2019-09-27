@@ -15,7 +15,7 @@
 .menu-content{
     width: 50%;
     overflow-y: scroll;
-    height: 78vh;
+    /* height: 90vh; */
     margin-right: 5px;
 }
 

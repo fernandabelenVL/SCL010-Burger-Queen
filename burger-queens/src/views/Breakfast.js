@@ -5,6 +5,7 @@ import './Breakfast.css';
 import MenuItem  from '../components/MenuItem'
 import InputClient  from '../components/InputClient'
 import { Container } from '@material-ui/core';
+import OrderDetail from '../components/OrderDetail'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 function Breakfast() {
@@ -26,9 +27,7 @@ function Breakfast() {
 
                 </div>
 
-                <div className="order-detail">
-                    <h1>Detalle de la orden</h1>
-                </div>
+                <OrderDetail/>
             </Container>
     </div>
     )
