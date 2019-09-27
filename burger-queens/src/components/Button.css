@@ -1,0 +1,45 @@
+.btnYellow {
+    background: #FFCC24;
+    
+}
+.btnRed {
+    background: #FF0D3C;
+   color: white;
+}
+.btnGray {
+    background: #c2c2c2;
+}
+.button {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSmall {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 10px 40px;
+    margin: 10px 5px;
+}
+
+.btnLarge {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 10px 80px;
+    margin: 10px 5px;
+    max-width: 50vh;
+}
+
+.btnMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

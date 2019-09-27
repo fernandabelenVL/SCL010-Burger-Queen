@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
-import Buttons from '../components/Button';
+import '../components/Button.css'
+import Button from '../components/Button';
 import Navigation from "../components/Navigation";
 import { Link } from "react-router-dom";
 
@@ -21,8 +22,8 @@ function Home() {
 				</div>
 
 				<div className= "button">
-					<Link to="/breakfast"> <button  className="waiter" type="button"> MESERO </button></Link>
-					<Link to="/kitchen"><button className="kitchen" type="button">COCINA</button></Link>
+					<Link to="/breakfast"> <Button name='MESERO' btnClass= 'btnSmall btnYellow' /></Link>
+					<Link to="/kitchen"><Button name='COCINA' btnClass= 'btnSmall btnRed' /></Link>
 				</div>	
 		</div>
 

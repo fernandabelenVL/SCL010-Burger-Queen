@@ -17,6 +17,9 @@ p {
   font-family: 'Roboto', sans-serif;
   margin: 0%;
 }
+a {
+  text-decoration: none;
+}
 
 .text-white {
   color: white;
