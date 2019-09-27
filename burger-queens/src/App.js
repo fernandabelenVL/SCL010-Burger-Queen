@@ -15,11 +15,12 @@ import Lunch from './views/Lunch';
 
 function App() {
   return (
-  <div className="App">    
+    < >
+    <div className="App">    
      <Router>
       <Switch>
         <Route exact path="/" component = { Home } />
-        <Route path="/menu" component = { Menu } />
+        {/* <Route path="/menu" component = { Menu } /> */}
         <Route path="/kitchen" component = { Kitchen } />
         <Route exact path="/pending" component = { Pedidos } />
         <Route exact path="/records" component = { Records } />
@@ -28,8 +29,10 @@ function App() {
 
       </Switch>
     </Router>
-  <Footer />
     </div>
+    {/* <Footer /> */}
+    </>
+
   );
 }
 

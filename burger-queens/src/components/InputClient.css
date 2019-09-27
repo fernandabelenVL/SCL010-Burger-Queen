@@ -1,0 +1,16 @@
+h4 {
+    margin-left: 11%;
+    text-align: initial;
+    padding: 0%;
+    margin-top: 5%;
+}
+
+input {
+    width: 76%;
+    padding: 1%;
+    margin-bottom: 20px;
+    margin-top: 0%;
+    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    border:1px solid #FFCC24;
+}

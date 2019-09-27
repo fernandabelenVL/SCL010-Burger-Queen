@@ -8,12 +8,15 @@
     border-radius: 5px;
 }
 
-.lunch-menu{
+.order-detail {
     width: 50%;
 }
 
-.order-detail {
+.menu-content{
     width: 50%;
+    overflow-y: scroll;
+    /* height: 90vh; */
+    margin-right: 5px;
 }
 
 .lunch-content{

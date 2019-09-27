@@ -1,24 +1,25 @@
-.containerBreakfast {
-    display: flex;
-    margin: 5%;
+.menu-item{
+  background: #fff;
+  width: 155px;
+  height: 177px;
+  margin: 5px;
+  padding: 10px;
+  border-color: #EBE7E7;
+  border-radius: 5px;
 }
 
-.itemMenu {
-    width: 50%;
-    background-color: white;
-    border: 1%;
+.order-detail {
+  width: 50%;
 }
 
-.breakfastProducts{
-display: flex;
-flex-flow: wrap; 
-width: 50%;
+.menu-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
 }
 
-.btnBreakfast{
-  padding: 5%;  
-  margin: 2%;
-  width: 120px;
-  height: 120px;
-  border-radius: 5%;
+.breakfast-content{
+  display: flex;
+  margin-bottom: 30px;
 }
