@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from './views/Home'
-import Menu from "./views/Menu";
 import Kitchen from "./views/Kitchen";
 import Pedidos from './views/Pedidos'
 import Records from './views/Records'
@@ -29,10 +28,10 @@ function App() {
 
       </Switch>
     </Router>
+  
     </div>
-    {/* <Footer /> */}
+    <Footer />
     </>
-
   );
 }
 

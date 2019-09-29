@@ -8,7 +8,8 @@ class Buttons extends Component {
         return (
     <div>
         <Switch>
-º       <Button className="btn"> { this.props.name } </Button>
+º       <a href={ this.props.href } className = { this.props.btnClass } > { this.props.name } </a>
+
        </Switch>
 
     </div>

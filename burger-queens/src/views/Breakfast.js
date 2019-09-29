@@ -1,5 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import '../components/Button.css'
+import Button from '../components/Button';
 import menu from '../data/data.json';
 import './Breakfast.css';
 import MenuItem  from '../components/MenuItem'
@@ -11,9 +13,11 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 function Breakfast() {
     return (
     <div>
-        <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
-        <Link to="/breakfast"> <button type="button">DESAYUNO</button></Link>
-        <Link to="/lunch"><button type="button">ALMUERZO Y CENA</button></Link>
+        <Navigation home="INICIO" pending="PENDIENTES" records="HISTORIAL"/>
+        <div className='btnMenu'>
+            <Link to="/breakfast"> <Button name='DESAYUNO' btnClass= 'btnLarge btnYellow' /></Link>
+            <Link to="/lunch"><Button name='ALMUERZO' btnClass= 'btnLarge btnGray' /></Link>
+        </div>
         <InputClient />
         <Container className="breakfast-content">
                 <div className="menu-content">
