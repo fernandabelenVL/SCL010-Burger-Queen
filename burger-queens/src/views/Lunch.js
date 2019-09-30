@@ -1,11 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import OrderDetail from '../components/OrderDetail'
 import './Lunch.css';
 import MenuItem  from '../components/MenuItem'
 import InputClient  from '../components/InputClient'
 import { Link } from "react-router-dom";
 import { Container } from '@material-ui/core';
-
+import ButtonsMenu from '../components/ButtonsMenu';
+import ButtonSend from '../components/ButtonSend';
 
 // data
 import menu from '../data/data.json';
@@ -18,15 +20,14 @@ function Lunch() {
         <div>
             <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
 
-            <Link to="/breakfast"> <button type="button"> DESAYUNO </button></Link>
-		    <Link to="/lunch"><button type="button"> ALMUERZO Y CENA</button></Link>
-
+            <ButtonsMenu  />
             <InputClient />
 
             <Container className="lunch-content">
                 <div className="menu-content">
                         {menu.Lunchs.map((e =>
                         <MenuItem
+                        key={e.id}
                         product={e.product}
                         price={e.price}
                         img={e.img}
@@ -35,13 +36,10 @@ function Lunch() {
 
                 </div>
 
-                <div className="order-detail">
-                    <h1>Detalle de la orden</h1>
-                </div>
+                <OrderDetail/>
             </Container>
-
+         <ButtonSend />
         </div>
-
     )
 }
 

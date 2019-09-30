@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
-import Buttons from '../components/Button';
+import ButtonsHome from '../components/ButtonsHome';
 import Navigation from "../components/Navigation";
-import { Link } from "react-router-dom";
-
 import bigBurger from '../img/big-burger@2x.png'
+import Footer from '../components/Footer'
 
 
 function Home() {
 	return (
+	<>	
 		<div className="Home">
 			<Navigation />
 			<div className="home-content">
@@ -19,14 +19,14 @@ function Home() {
 					<h3>¡BIENVENIDO!</h3>
 					<p>Para empezar selecciona si eres Mesero o Cocina</p>				
 				</div>
-
 				<div className= "button">
-					<Link to="/menu"> <button  className="waiter" type="button"> MESERO </button></Link>
-					<Link to="/kitchen"><button className="kitchen" type="button">COCINA</button></Link>
+					<ButtonsHome/>
 				</div>	
 		</div>
-
-		</div>       
+	</div>   
+	
+	<Footer />
+	</>
 	)
 }
 

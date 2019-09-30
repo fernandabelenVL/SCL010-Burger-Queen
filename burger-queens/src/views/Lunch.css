@@ -13,10 +13,10 @@
 }
 
 .menu-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     width: 50%;
+    overflow-y: scroll;
+    /* height: 90vh; */
+    margin-right: 5px;
 }
 
 .lunch-content{

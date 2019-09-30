@@ -1,33 +1,58 @@
 import React from 'react';
 import './InputClient.css';
+import db from '../FirestoreConfig'
 
 class InputClient extends React.Component {
 
-    constructor(props) {
-      super(props);
-      this.state = {value: ''};
+      state = {
+        inputValue: '',
+      };
   
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
+      
+      changeValue = (e) =>{
+          this.setState({
+          inputValue: e.target.value
+          })
+      };
+    
+      sendName = () => {
+        const { inputValue } = this.state;
+          db.collection('Menu').add({
+            items: inputValue
+         }).then( () => {
+           this.message('Enviado');
+        }).catch(() => {
+            this.message('error'); 
+          });
+          this.update()
+    };
   
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
-      event.preventDefault();
-    }
-  
+    getTodo = (id) => {
+      let docRef  = db.collection('Menu').doc(id);
+      docRef.get().then((doc) => {
+          if (doc.exists) {
+              this.setState({
+              inputValue: doc.data().item,
+              id: doc.id,
+              })
+          } else {
+              console.log('El documento no existe');
+              
+          }
+      }).catch((error) => {
+          console.log(error);
+      })
+      };
+
     render() {
+    const { items, inputValue } =  this.state;
       return (
-        <form onSubmit={this.handleSubmit}>
+        <form>
         <h4>NOMBRE DE CLIENTE</h4>
           <label>
-            <input  placeholder = "Ingrese nombre del cliente" type="text" value={this.state.value} onChange={this.handleChange} />
+          <input  placeholder = "Ingrese nombre del cliente" type="text" value= { inputValue } onChange={ this.changeValue } />
           </label>
-          {/* <button type="submit" value="Submit"> Enviar a cocina </button> */}
+          <button type="submit" value="Submit" onClick={ this.sendName }> Enviar a cocinaaa </button>
         </form>
       );
     }
