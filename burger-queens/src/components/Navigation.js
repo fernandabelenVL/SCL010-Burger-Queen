@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 import logo from '../img/logo@2x.png'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
     render() {
