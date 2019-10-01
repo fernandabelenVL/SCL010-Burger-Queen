@@ -6,7 +6,7 @@ function MenuItem (props) {
     return (
             <button className = 'item-box'>
                 <img src={props.img} alt="menu icon" className="item-img"/>
-                <div><p>{props.product}</p></div>
+                <div className='item-name'><p>{props.product}</p></div>
                 <div className='item-price'><p>{props.price}</p></div>
             </button>
     )   

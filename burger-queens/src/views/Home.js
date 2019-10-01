@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { Container } from 'reactstrap';
+
 import './Home.css';
-import ButtonsHome from '../components/ButtonsHome';
+import '../components/ButtonDefault.css'
+import Buttons from '../components/ButtonDefault';
 import Navigation from "../components/Navigation";
 import bigBurger from '../img/big-burger@2x.png'
-import Footer from '../components/Footer'
 
 
 function Home() {
@@ -11,21 +14,20 @@ function Home() {
 	<>	
 		<div className="Home">
 			<Navigation />
-			<div className="home-content">
+			<Container className="home-content">
 				<div>
 					<img src= { bigBurger } alt="Big Burger" className="bigBurger"></img>
 				</div>
 				<div>
-					<h3>¡BIENVENIDO!</h3>
+					<h3 className="bold-text">¡BIENVENIDO!</h3>
 					<p>Para empezar selecciona si eres Mesero o Cocina</p>				
 				</div>
-				<div className= "button">
-					<ButtonsHome/>
+				<div className= "btnsHome">
+					<Link to="/breakfast"> <Buttons name='MESERO' btnClass= 'btnSmall btnYellow' /></Link>
+					<Link to="/kitchen"><Buttons name='COCINA' btnClass= 'btnSmall btnRed' /></Link>
 				</div>	
-		</div>
+			</Container>
 	</div>   
-	
-	<Footer />
 	</>
 	)
 }
