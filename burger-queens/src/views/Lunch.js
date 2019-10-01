@@ -7,7 +7,7 @@ import InputClient  from '../components/InputClient'
 import { Link } from "react-router-dom";
 import '../components/ButtonDefault.css'
 import Buttons from '../components/ButtonDefault';
-import { Container, Table, Row, Col} from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
 
 
 

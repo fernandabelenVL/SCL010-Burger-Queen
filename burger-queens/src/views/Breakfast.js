@@ -7,7 +7,7 @@ import './Breakfast.css';
 import MenuItem  from '../components/MenuItem'
 import InputClient  from '../components/InputClient'
 import OrderDetail from '../components/OrderDetail'
-import { Container, Table, Row, Col} from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
 
 import { Link } from "react-router-dom";
 

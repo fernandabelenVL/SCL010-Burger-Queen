@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './views/Home'
 import Kitchen from "./views/Kitchen";
 import Pedidos from './views/Pedidos'
@@ -8,9 +8,6 @@ import Records from './views/Records'
 import Breakfast from './views/Breakfast';
 import Lunch from './views/Lunch';
 import Footer from './components/Footer'
-
-
-
 
 function App() {
   return (

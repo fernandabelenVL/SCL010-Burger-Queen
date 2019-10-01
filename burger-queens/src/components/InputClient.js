@@ -1,7 +1,7 @@
 import React from 'react';
 import './InputClient.css';
 import db from '../FirestoreConfig'
-import { Container, Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 
 
 class InputClient extends React.Component {
