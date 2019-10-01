@@ -4,25 +4,25 @@
             "id": 1,
             "product": "Café americano",
             "price": 500,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-coffe.svg?alt=media&token=58695f2e-f52a-4005-a78f-192c590451ae"
         },
         {
             "id": 2,
             "product": "Café con leche",
             "price": 700,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-coffe.svg?alt=media&token=58695f2e-f52a-4005-a78f-192c590451ae"
         },
         {
             "id": 3,
             "product": "Sandwich de jamón y queso",
             "price": 1000,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-sandwich.svg?alt=media&token=d4ccb88c-8f8c-4f7d-9cea-418d0ed14492"
         },
         {
             "id": 4,
             "product": "Jugo natural",
             "price": 700,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-juice.svg?alt=media&token=3001a182-8576-4d74-8512-a4e8ded7a472"
         }
     ],
 
@@ -31,43 +31,43 @@
             "id": 5,
             "product": "Hamburguesa Pollo Simple",
             "price": 1500,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-simple.svg?alt=media&token=bbb9476d-bc90-460c-9edc-766a87a6f5c1"
         },
         {
             "id": 6,
             "product": "Hamburguesa Vacuno Simple",
             "price": 1500,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-simple.svg?alt=media&token=bbb9476d-bc90-460c-9edc-766a87a6f5c1"
         },
         {
             "id": 7,
             "product": "Hamburguesa Vegetariana Simple",
             "price": 1500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-simple.svg?alt=media&token=bbb9476d-bc90-460c-9edc-766a87a6f5c1"
         },
         {
             "id": 8,
             "product": "Hamburguesa Pollo Doble",
             "price": 2500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-double.svg?alt=media&token=d29639e2-5d4a-41be-9223-e011fc8cd913"
         },
         {
             "id": 9,
             "product": "Hamburguesa Vacuno Doble",
             "price": 2500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-double.svg?alt=media&token=d29639e2-5d4a-41be-9223-e011fc8cd913"
         },
         {
             "id": 10,
             "product": "Hamburguesa Vegetariana Doble",
             "price": 2500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-double.svg?alt=media&token=d29639e2-5d4a-41be-9223-e011fc8cd913"
         },
         {
             "id": 11,
             "product": "Huevo",
             "price": 500,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-eggs.svg?alt=media&token=40e149ee-d16c-4207-b038-2aa0f531640f"
         },
         {
             "id": 12,
@@ -79,37 +79,37 @@
             "id": 13,
             "product": "Papas Fritas",
             "price": 500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-fries.svg?alt=media&token=38779997-8014-435d-a1c7-a1b2e75efbea"
         },
         {
             "id": 14,
             "product": "Onion Rings",
             "price": 500,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-onions.svg?alt=media&token=f8afded2-da07-4b84-bddd-762f1ffb38f4"
         },
         {
             "id": 15,
             "product": "Agua 500ml",
             "price": 500,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-water-small.svg?alt=media&token=57bc4caf-7c3a-48d6-bdb7-5dec7a5355b0"
         },
         {
             "id": 16,
             "product": "Agua 750ml",
             "price": 800,
-            "img": ""
+            "img": "https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-water-big.svg?alt=media&token=a92d087c-d773-4568-80bc-7ec3c96d1d3a"
         },
         {
             "id": 17,
             "product": "Bebida 500ml",
             "price": 700,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-soda-small.svg?alt=media&token=35300fbc-4b99-4bed-9b2c-c1a66c6cfa7b"
         },
         {
             "id": 18,
             "product": "Bebida 750ml",
             "price": 1000,
-            "img":""
+            "img":"https://firebasestorage.googleapis.com/v0/b/burger-queens.appspot.com/o/icons%2Fico-soda.svg?alt=media&token=25cca155-428d-41f9-a06d-6c69ac5cf31d"
         }
     ]
 }
