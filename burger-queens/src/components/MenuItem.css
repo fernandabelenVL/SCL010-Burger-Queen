@@ -1,9 +1,7 @@
-
-
 .item-box {
     display: flex;
-    flex-direction: column;
     position: relative;
+    justify-content: center;
     height: 200px;
     width: 150px;
     background: #fff;
@@ -12,6 +10,12 @@
     border-radius: 10px;
     font-size: 16px;
 }
+.item-name {
+    position: absolute;
+    bottom: 24px;
+    font-size: 13px;
+    font-family: "Roboto",sans-serif;
+}
 
 .item-price {
     background: #585858;
@@ -19,12 +23,17 @@
     bottom: 0; 
     width: 150px;
     padding: 5px 0;
-    margin-left: -8px;
     color: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+.item-price p {
+    margin: 0;
+}
+
 .item-img{
-    height: 55%;
+    position: absolute;
+    height: 40%;
+    top: 25px;
 }

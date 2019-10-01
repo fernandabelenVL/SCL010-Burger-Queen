@@ -67,7 +67,7 @@ render() {
     return (
         <div className='order-detail'>
             <div>            
-                <p className='order-title'>DETALLE DE LA ORDEN</p>
+                <h4 className='order-title'>DETALLE DE LA ORDEN</h4>
             </div>
 
             <div className='food-selected'>

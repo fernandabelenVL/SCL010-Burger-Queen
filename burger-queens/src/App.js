@@ -7,6 +7,8 @@ import Pedidos from './views/Pedidos'
 import Records from './views/Records'
 import Breakfast from './views/Breakfast';
 import Lunch from './views/Lunch';
+import Footer from './components/Footer'
+
 
 
 
@@ -26,9 +28,10 @@ function App() {
 
       </Switch>
     </Router>
+  
     </div>
+    <Footer />
     </>
-
   );
 }
 

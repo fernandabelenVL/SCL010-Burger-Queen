@@ -1,6 +1,8 @@
 import React from 'react';
 import './InputClient.css';
 import db from '../FirestoreConfig'
+import { Container, Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+
 
 class InputClient extends React.Component {
 
@@ -47,13 +49,18 @@ class InputClient extends React.Component {
     render() {
     const { items, inputValue } =  this.state;
       return (
-        <form>
-        <h4>NOMBRE DE CLIENTE</h4>
-          <label>
-          <input  placeholder = "Ingrese nombre del cliente" type="text" value= { inputValue } onChange={ this.changeValue } />
-          </label>
-          <button type="submit" value="Submit" onClick={ this.sendName }> Enviar a cocinaaa </button>
-        </form>
+            <form>
+               <h4 className="title-name">NOMBRE DE CLIENTE</h4>
+               <Row className='name-container'>
+                  <Col xs='10' className='input-placeholder'>
+                     <input  placeholder = "Ingrese nombre del cliente" type="text" value= { inputValue } onChange={ this.changeValue } />
+                  </Col>
+                  <Col xs='2'>
+                     <button className='save-name' type="submit" value="Submit" onClick={ this.sendName }> GUARDAR </button>
+                  </Col>
+
+               </Row>
+            </form>
       );
     }
   }

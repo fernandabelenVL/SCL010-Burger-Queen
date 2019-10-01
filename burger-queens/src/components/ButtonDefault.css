@@ -1,0 +1,80 @@
+.btnYellow {
+    background-color: #ffcc24;
+    color: #000000;    
+}
+
+.btnRed {
+    background: #F81D47;
+    color: white;
+}
+.btnGray {
+    background: #c2c2c2;
+    color: #000000;    
+}
+
+.btnGray:hover {
+    background: #ffcc24;
+    color: #000000;    
+}
+
+.btnsHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSmall {
+    width: 255px;
+    height: 68px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    margin: 10px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1.6px;
+    text-align: center;
+    padding: 20px 80px
+}
+
+.btnLarge {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.19;
+    letter-spacing: 1.6px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px
+}
+
+.btnMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.btnSend {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    text-align: center;
+    padding: 20px 80px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+.margin-right {
+    margin-right: 5px;
+}
+
+.margin-left {
+    margin-left: 5px;
+}

@@ -1,10 +1,15 @@
-.footer {
-    display: flex;
-    position: absolute;
+footer {
+    display: flex !important; 
+    flex-direction: column;
+    position: fixed;
     align-items: center;
     justify-content: center;
     bottom: 0;
     width: 100%;
-    background-color: #1F1F1F;
-    height: 40px;
+    background-color: #1f1f1f;
+    height: 5vh;
+  }
+
+  footer p {
+    margin: 0;
   }

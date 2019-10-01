@@ -8,18 +8,8 @@
   border-radius: 5px;
 }
 
-.order-detail {
-  width: 50%;
-}
-
 .menu-content{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 50%;
-}
-
-.breakfast-content{
-  display: flex;
-  margin-bottom: 30px;
 }
