@@ -5,9 +5,25 @@ import db from '../FirestoreConfig'
 class InputClient extends React.Component {
 
       state = {
+        items: [],
         inputValue: '',
+        message: '',
+        id: '',
+        fadeIn: false,    
       };
-  
+
+      componentDidMount() {
+        db.collection('Menu').onSnapshot((snapShots) => {
+            this.setState({
+                items: snapShots.docs.map( doc => {
+                return { id:
+                  doc.id, data: doc.data() }
+                })
+            })
+        }, error => {
+            console.log(error);    
+        }   
+        )};
       
       changeValue = (e) =>{
           this.setState({
@@ -16,7 +32,9 @@ class InputClient extends React.Component {
       };
     
       sendName = () => {
-        const { inputValue } = this.state;
+        console.log( this.state.inputValue);
+        
+        const { inputValue } = this.state.inputValue;
           db.collection('Menu').add({
             items: inputValue
          }).then( () => {
@@ -24,7 +42,6 @@ class InputClient extends React.Component {
         }).catch(() => {
             this.message('error'); 
           });
-          this.update()
     };
   
     getTodo = (id) => {
@@ -44,8 +61,21 @@ class InputClient extends React.Component {
       })
       };
 
+      message = (message) => {
+        this.setState({
+            inputValue:'',
+            message: message
+        })
+        setTimeout(() => {
+            this.setState({
+            message: ''
+            })
+        }, 2000)
+        };
+           
+
     render() {
-    const { items, inputValue } =  this.state;
+    const { inputValue } =  this.state;
       return (
         <form>
         <h4>NOMBRE DE CLIENTE</h4>
