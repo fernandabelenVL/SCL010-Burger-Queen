@@ -125,7 +125,7 @@ render() {
             </div>
 
             <Row>
-                    <Col xs='10'>
+                    <Col xs='8'>
                         <InputGroup>
                         <Input 
                         placeholder="Agregar un nuevo item"
@@ -134,7 +134,7 @@ render() {
                         />
                         </InputGroup>
                     </Col>
-                    <Col xs='2'>
+                    <Col >
                         <div className="text-right">
                             <Button color="info" onClick={this.action}>
                                 {/* Si si edita el boton dice editar, sino agregar */}

@@ -18,8 +18,8 @@ function App() {
 
         <Route exact path="/" component = { Home } />
         <Route path="/kitchen" component = { Kitchen } />
-        <Route exact path="/pending" component = { Pedidos } />
-        <Route exact path="/records" component = { Records } />
+        <Route path="/pending" component = { Pedidos } />
+        <Route path="/records" component = { Records } />
         <Route path="/breakfast" component = { Breakfast } />
         <Route path="/lunch" component = { Lunch } />
 

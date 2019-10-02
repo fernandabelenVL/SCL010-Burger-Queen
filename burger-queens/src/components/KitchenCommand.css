@@ -1,0 +1,46 @@
+.bold-text {
+    font-weight: 600;
+}
+.command-container {
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.headline-text {
+    line-height: 7px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    background: #FFCC24;
+    padding: 40px 40px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.item-list {
+    padding: 30px 60px 10px;
+}
+
+.circle-icon {
+    font-size: 40px;
+    color: #fff;
+}
+
+.btn-ready {
+    background: #FF0D3C;
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+    border: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.btn-ready:active {
+    background: #c10026;
+}

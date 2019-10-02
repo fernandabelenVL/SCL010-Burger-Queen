@@ -12,8 +12,14 @@ class MenuItem extends Component {
         this.changeNameAndPrice= this.changeNameAndPrice.bind(this)
     }
 
+    componentDidMount() {
+        console.log('Child did mount.');
+
+      }
+    
+
     changeNameAndPrice (props){
-        this.setState({product: this.props.product, price: this.props.price})
+        // this.setState({product: this.props.product, price: this.props.price})
         console.log(this.state.product)
     }
 

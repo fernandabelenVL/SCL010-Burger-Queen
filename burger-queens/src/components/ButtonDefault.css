@@ -35,7 +35,9 @@
     font-weight: 900;
     letter-spacing: 1.6px;
     text-align: center;
-    padding: 20px 80px
+    padding: 20px 80px;
+    border: none;
+
 }
 
 .btnLarge {
@@ -50,12 +52,16 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px
+    padding: 20px;
+    border: none;
+
 }
 
 .btnMenu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: none;
+
 }
 
 .btnSend {
@@ -69,6 +75,8 @@
     padding: 20px 80px;
     width: 100%;
     margin-bottom: 70px;
+    border: none;
+
   }
 
 .margin-right {
