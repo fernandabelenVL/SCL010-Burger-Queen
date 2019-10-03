@@ -6,26 +6,22 @@ class MenuItem extends Component {
     constructor (){
         super();
         this.state = {
+            orders: [],
             product: "",
             price: ""
         }
-        this.changeNameAndPrice= this.changeNameAndPrice.bind(this)
+        this.handleClick= this.handleClick.bind(this)
     }
 
-    componentDidMount() {
-        console.log('Child did mount.');
-
-      }
-    
-
-    changeNameAndPrice (props){
-        // this.setState({product: this.props.product, price: this.props.price})
-        console.log(this.state.product)
+    handleClick () {
+        const itemName= this.props.product;
+        const itemPrice= this.props.price;
+        console.log(itemName, itemPrice);
     }
 
     render(){
     return (
-            <button className = 'item-box' onClick= {this.changeNameAndPrice(this.props)}>
+            <button className = 'item-box' onClick={this.handleClick} >
                 <img src={this.props.img} alt="menu icon" className="item-img"/>
                 <div className='item-name'><p>{this.props.product}</p></div>
                 <div className='item-price'><p>{this.props.price}</p></div>

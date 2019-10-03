@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './OrderDetail.css';
 import db from '../FirestoreConfig'
-import { Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+import { Table, Button, Row, Col, InputGroup, Input } from 'reactstrap';
 
 
 class OrderDetail extends Component {
@@ -116,6 +116,7 @@ class OrderDetail extends Component {
 
 render() {
     const { items, inputValue } = this.state;
+
 
     return (
         

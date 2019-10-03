@@ -1,50 +1,68 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import Navigation from '../components/Navigation';
-import '../components/ButtonDefault.css'
 import Buttons from '../components/ButtonDefault';
-import menu from '../data/data.json';
+import MenuItem  from '../components/MenuItem';
+import InputClient  from '../components/InputClient';
+import OrderDetail from '../components/OrderDetail';
+
+//css
+import '../components/ButtonDefault.css'
 import './Breakfast.css';
-import MenuItem  from '../components/MenuItem'
-import InputClient  from '../components/InputClient'
-import OrderDetail from '../components/OrderDetail'
 import { Container, Row, Col} from 'reactstrap';
 
-import { Link } from "react-router-dom";
+//data
+import menu from '../data/data.json';
 
-function Breakfast() {
-    return (
-        <div>
-            <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
-            <Container>
 
-                <div className='btnMenu'>
-                    <Link to="/breakfast"> <Buttons name='DESAYUNO' btnClass= 'btnLarge btnYellow margin-right' /></Link>
-                    <Link to="/lunch"><Buttons name='ALMUERZO' btnClass= 'btnLarge btnGray margin-left' /></Link>
-                </div>
-                <InputClient />
+class Breakfast extends Component {
+    constructor () {
+        super();
+        this.state = {
+            menu: menu,
+            orders: []
+        }
+    }
+    
+    render(){
+         const Items = this.state.menu.Breakfasts.map(e => {
+            return (
+                <MenuItem
+                key={e.id}
+                product={e.product}
+                price={e.price}
+                img={e.img}
+                />
+            )
+        });
 
-                <Row>
-                    <Col xs='6'>
-                        <div className="menu-content">
-                            {menu.Breakfasts.map((e =>
-                            <MenuItem
-                            key={e.id}
-                            product={e.product}
-                            price={e.price}
-                            img={e.img}
-                            />
-                            ))}
-                        </div>
-                    </Col>
-                    <Col xs='6'>
-                        <OrderDetail/>
-                        <Buttons name='ENVIAR A COCINA' btnClass= 'btnSend btnRed'/>
-                    </Col>
-                </Row>
+        return (
+            <div>
+                <Navigation home="INICIO" menu="MENU" pending="PENDIENTES" records="HISTORIAL"/>
+                <Container>
 
-            </Container>
-        </div>
-    )
+                    <div className='btnMenu'>
+                        <Link to="/breakfast"> <Buttons name='DESAYUNO' btnClass= 'btnLarge btnYellow margin-right' /></Link>
+                        <Link to="/lunch"><Buttons name='ALMUERZO' btnClass= 'btnLarge btnGray margin-left' /></Link>
+                    </div>
+                    <InputClient />
+
+                    <Row>
+                        <Col xs='6'>
+                            <div className="menu-content">
+                               {Items}
+                            </div> 
+                        </Col>
+                        <Col xs='6'>
+                            <OrderDetail/>
+                            <Buttons name='ENVIAR A COCINA' btnClass= 'btnSend btnRed'/>
+                        </Col>
+                    </Row>
+
+                </Container>
+            </div>
+        )
+    }
 }
 
 export default Breakfast;
