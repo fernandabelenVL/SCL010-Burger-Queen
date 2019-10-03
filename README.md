@@ -1,10 +1,8 @@
-# Burger Queens
+# Burger Queens 🍔
+
+  <img src='./files/img/burgerlogo.png'>  
 
   Burger Queens es una interfaz para restaurantes que consiste en poder tomar pedidos de una manera fácil y expedita, desde cualquier tablet.
-
-  <img src='./files/img/logo.png'>  
-
-![enter image description here](https://lh3.googleusercontent.com/uNYh9gXQ5aEaWT58lL7bfhfIS1VxLH13nKhXYDsajl0rbOT1u9dEB6NruPFm89BHd-PX88EpqbVX5A)
 
 ### Modo de uso 📔
 
@@ -21,9 +19,9 @@ En la ruta de historial, se podrá acceder a todo el historial de comandas del r
 
 ## Diagrama de flujo 📝
 
-![enter image description here](https://lh3.googleusercontent.com/t_HfDNHi0-vpX2tWfIfFzybqJeP6GyXGDO-67it9a5bLyvc6WByvcpegaSklPljl541iYOaN_k1QMQ)
+<img src='./files/img/flujo.png'>
 
-## Prototipo de alta fidelidad 💻
+## Prototipo de alta fidelidad 👑
 <img src='./files/img/index.jpg'>
 <img src='./files/img/breakfast.jpg'>
 <img src='./files/img/lunch.jpg'>
@@ -32,6 +30,6 @@ En la ruta de historial, se podrá acceder a todo el historial de comandas del r
 <img src='./files/img/record.jpg'>  
 
 ## Desarrolladoras 💻
-*Fernanda Vega 
-Dharma 
+*Fernanda Vega  
+Dharma  
 Daniela Quintana Martínez*
