@@ -47,7 +47,7 @@ class InputClient extends React.Component {
       };
 
     render() {
-    const { items, inputValue } =  this.state;
+    const { inputValue } =  this.state;
       return (
             <form>
                <h4 className="title-name">NOMBRE DE CLIENTE</h4>

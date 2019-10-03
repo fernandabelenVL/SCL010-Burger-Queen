@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './views/Home'
 import Kitchen from "./views/Kitchen";
-import Pedidos from './views/Pedidos'
+import Pending from './views/Pending'
 import Records from './views/Records'
 import Breakfast from './views/Breakfast';
 import Lunch from './views/Lunch';
@@ -18,7 +18,7 @@ function App() {
 
         <Route exact path="/" component = { Home } />
         <Route path="/kitchen" component = { Kitchen } />
-        <Route path="/pending" component = { Pedidos } />
+        <Route path="/pending" component = { Pending } />
         <Route path="/records" component = { Records } />
         <Route path="/breakfast" component = { Breakfast } />
         <Route path="/lunch" component = { Lunch } />

@@ -1,0 +1,52 @@
+.command-list-pending{
+    margin-top: 20px
+}
+
+.select-box{
+    margin-top: 20px;
+}
+
+.select-box .btn{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.select-box .btn:hover{
+    background: #585858;
+    border: 1px solid #585858;
+}
+
+.select-box input{
+    padding: 10px;
+    width: 100%;
+}
+
+.react-datepicker-wrapper{
+    width: 100%;
+}
+
+.react-datepicker__input-container  input{
+    border: 1px solid #C1C1C1;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.react-datepicker__input-container  input:hover{
+    background: #585858;
+    border: 1px solid #585858;
+    color:  #fff;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+    
+.react-datepicker-ignore-onclickoutside:hover{
+    color: #fff;
+}
+
+
