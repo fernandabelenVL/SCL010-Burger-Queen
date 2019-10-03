@@ -2,6 +2,8 @@
 
   Burger Queens es una interfaz para restaurantes que consiste en poder tomar pedidos de una manera fácil y expedita, desde cualquier tablet.
 
+  <img src='./files/img/logo.png'>  
+
 ![enter image description here](https://lh3.googleusercontent.com/uNYh9gXQ5aEaWT58lL7bfhfIS1VxLH13nKhXYDsajl0rbOT1u9dEB6NruPFm89BHd-PX88EpqbVX5A)
 
 ### Modo de uso 📔
@@ -30,6 +32,6 @@ En la ruta de historial, se podrá acceder a todo el historial de comandas del r
 <img src='./files/img/record.jpg'>  
 
 ## Desarrolladoras 💻
-*Fernanda Vega
-Dharma
+*Fernanda Vega 
+Dharma 
 Daniela Quintana Martínez*
