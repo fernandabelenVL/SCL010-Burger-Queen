@@ -124,7 +124,7 @@ render() {
                 <h4 className='order-title'>DETALLE DE LA ORDEN</h4>
             </div>
 
-            <Row>
+            <Row className="add-element">
                     <Col xs='8'>
                         <InputGroup>
                         <Input 
@@ -134,29 +134,27 @@ render() {
                         />
                         </InputGroup>
                     </Col>
-                    <Col >
+                    <Col>
                         <div className="text-right">
-                            <Button color="info" onClick={this.action}>
+                            <button className='btn-add' onClick={this.action}>
                                 {/* Si si edita el boton dice editar, sino agregar */}
-                                {this.state.edit ? 'Editar' : 'Agregar'}
-                            </Button>
+                                {this.state.edit ? 'EDITAR' : 'AGREGAR'}
+                            </button>
                         </div>
                     </Col>
                 </Row>
                 
                 {/* mostrar mensaje para antes de Eliminar */}
-                <Fade in={this.state.fadein} tag="h6" className= "mt-3 text-center text-success">
+                {/* <Fade in={this.state.fadein} tag="h6" className= "mt-3 text-center text-success">
                     {this.state.message}
-                </Fade>
-
-                <br></br>
+                </Fade> */}
 
                 <Table hover className="text-center">
                     <tbody>
                         { items && items!== undefined ? items.map((item, key) => (
                             <tr key = {key}>
                                 <td>{item.data.item}</td> 
-                                <td><Button color="danger" onClick={()=> this.deleteItem(item.id)}>X</Button></td>
+                                <td><Button color="danger btnCircle" onClick={()=> this.deleteItem(item.id)}>X</Button></td>
                             </tr>
 
                         )) :null }
