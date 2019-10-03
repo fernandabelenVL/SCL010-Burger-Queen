@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './MenuItem.css';
 
-
 class MenuItem extends Component {
     constructor (){
         super();
