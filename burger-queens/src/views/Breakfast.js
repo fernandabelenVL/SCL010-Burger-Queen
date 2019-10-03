@@ -25,7 +25,7 @@ class Breakfast extends Component {
     }
     
     render(){
-         const Items = this.state.menu.Breakfasts.map(e => {
+         const Items = menu.Breakfasts.map(e => {
             return (
                 <MenuItem
                 key={e.id}

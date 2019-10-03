@@ -80,9 +80,11 @@ render() {
     const { orden, inputValue, item } =  this.state;
         return (
             <div>
-            <Row>
-                <Col xs="10">
-                    <InputGroup>
+              <h4 className="title-name">NOMBRE DE CLIENTE</h4>
+
+            <Row className='name-container'>
+                <Col xs="10" className='input-placeholder'>
+                    <InputGroup >
                     <Input
                     placeholder = "Agregar un nuevo ítem"
                     onChange = { this.changeValue }
@@ -92,7 +94,7 @@ render() {
                 </Col>
                 <Col xs="2">
                 <div className="text-right">
-                <Button color="info" onClick={ this.action }>{ 'Agregar' }</Button>
+                <Button color="info" onClick={ this.action }  className='save-name'>{ 'GUARDAR' }</Button>
                 </div>
                 </Col>
             </Row>
