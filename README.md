@@ -22,12 +22,12 @@ En la ruta de historial, se podrá acceder a todo el historial de comandas del r
 ![enter image description here](https://lh3.googleusercontent.com/t_HfDNHi0-vpX2tWfIfFzybqJeP6GyXGDO-67it9a5bLyvc6WByvcpegaSklPljl541iYOaN_k1QMQ)
 
 ## Prototipo de alta fidelidad 💻
-<img src='./files/index.png'>
-<img src='./files/breakfast.png'>
-<img src='./files/lunch.png'>
-<img src='./files/kitchen.png'>
-<img src='./files/pending.png'>
-<img src='./files/record.png'>  
+<img src='./files/img/index.jpg'>
+<img src='./files/img/breakfast.jpg'>
+<img src='./files/img/lunch.jpg'>
+<img src='./files/img/kitchen.jpg'>
+<img src='./files/img/pending.jpg'>
+<img src='./files/img/record.jpg'>  
 
 ## Desarrolladoras 💻
 *Fernanda Vega
