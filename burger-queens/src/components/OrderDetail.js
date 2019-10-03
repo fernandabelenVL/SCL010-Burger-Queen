@@ -1,92 +1,168 @@
 import React, { Component } from "react";
 import './OrderDetail.css';
 import db from '../FirestoreConfig'
+import { Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+
 
 class OrderDetail extends Component {
-state = {
+    state = {
         items: [],
-        id: '',
-        InputClient:'',
-        price: '',
-        products: '',
-    };
-    
-componentDidMount() {
-db.collection('Menu').onSnapshot((snapShots) => {
-    this.setState({
-        items: snapShots.docs.map( doc => {
-            return { id: doc.id, data: doc.data() }
-        })
-    })
-
-}, error => {
-    console.log(error);    
-}   
-)};
-
-clientName = (e) =>{
-    this.setState({
-    inputClient: e.target.value
-    })
-};
-
-sendOrder = () => {
-    const { inputClient } = this.state;
-    db.collection('Menu').add({
-        items: inputClient
-    }).then( () => {
-       this.message('Agregado');
-    }).catch(() => {
-        this.message('error'); 
-    });
-    this.update()
-};
-
-getTodo = (id) => {
-    let docRef  = db.collection('Menu').doc(id);
-    docRef.get().then((doc) => {
-        if (doc.exists) {
+        inputValue: "",
+        editar:false,
+        id: "",
+        fadein: false,
+        message: '',
+    }
+//obtengo la lista de todos los items guarddos en db
+    componentDidMount(){
+        //onSnapshot trae los elementos en tiempo real
+        db.collection('orders').onSnapshot((snapShots) => {
             this.setState({
-            inputClient: doc.data().clientName,
-            id: doc.id,
+                items: snapShots.docs.map(doc => {
+                    return {
+                        id: doc.id,
+                        data: doc.data()
+                    }
+                })
             })
-        } else {
-            console.log('El documento no existe');
-            
-        }
-    }).catch((error) => {
-        console.log(error);
-    })
-};
+        })
+    }
 
-deleteOrder = (id) => {
-    db.collection('Menu').doc(id).delete()
-};
+    //guarda el calor del input 
+    changeValue = (e) => {
+        this.setState ({
+            inputValue:e.target.value 
+        })
+    };
+
+    //boton que agrega valor de input a la base de datos
+    action = () => {
+        const {inputValue, edit} = this.state;
+
+        !edit ?
+        db.collection('orders').add({
+            item: inputValue
+        })
+        .then ( () => {
+            this.message('Agregado')
+        })
+        .catch ( () => {
+            this.message('Error')
+        })
+        : this.update();
+    };
+
+    //editar contenido del item
+    getTodo = (id) => {
+        let docRef =  db.collection("orders").doc(id);
+
+        //obtener el documento
+        docRef.get().then((doc) => {
+            //comprueba si el doc existe (o el id)
+            if(doc.exists) {
+                this.setState({
+                    inputValue: doc.data().item,
+                    edit: true,
+                    id: doc.id
+                })
+                    
+            }
+            else {
+                console.log("El documento no existe")
+            }
+        })
+        .catch ( (error) => {
+            console.log(error);
+        })
+    };
+
+    //editar item 
+    update = () => {
+        const { id, inputValue } = this.state;
+        db.collection("orders").doc(id).update({
+            item: inputValue
+        })
+        .then ( () => {
+            this.message('Actualizado');
+            this.setState({
+                edit:false
+            })
+        })
+        .catch ( (error) => {
+            this.message('error');
+        })
+    };
+
+    //borrar item del listado
+    deleteItem = (id) => {
+        db.collection("orders").doc(id).delete();
+    };
+
+    // mensaje de alerta antes de borrar
+    message = (message) => {
+        this.setState({
+            inputValue: "",
+            fadein: true,
+            message: message
+        });
+        setTimeout( ()=> {
+            this.setState({
+                fadein: false,
+                message: ""
+            })
+        }, 3000);
+    }
+
 
 render() {
+    const { items, inputValue } = this.state;
+
     return (
+        
         <div className='order-detail'>
             <div>            
                 <h4 className='order-title'>DETALLE DE LA ORDEN</h4>
             </div>
 
-            <div className='food-selected'>
-                <div className='food-name'>
-                    <p>Comida 1</p>
-                    <p>Comida 1</p>
-                </div>
-                <div className='food-price'>
-                    <p>$500 <button>X</button></p>
-                    <p>$800 <button>X</button></p>
-                    <p>$1000 <button>X</button></p>
-                </div>
-            </div>
+            <Row>
+                    <Col xs='10'>
+                        <InputGroup>
+                        <Input 
+                        placeholder="Agregar un nuevo item"
+                        value={inputValue}
+                        onChange={this.changeValue}
+                        />
+                        </InputGroup>
+                    </Col>
+                    <Col xs='2'>
+                        <div className="text-right">
+                            <Button color="info" onClick={this.action}>
+                                {/* Si si edita el boton dice editar, sino agregar */}
+                                {this.state.edit ? 'Editar' : 'Agregar'}
+                            </Button>
+                        </div>
+                    </Col>
+                </Row>
+                
+                {/* mostrar mensaje para antes de Eliminar */}
+                <Fade in={this.state.fadein} tag="h6" className= "mt-3 text-center text-success">
+                    {this.state.message}
+                </Fade>
 
-            <div className='total-price'>
-                <p>TOTAL</p>
-                <p>$2300</p>
+                <br></br>
+
+                <Table hover className="text-center">
+                    <tbody>
+                        { items && items!== undefined ? items.map((item, key) => (
+                            <tr key = {key}>
+                                <td>{item.data.item}</td> 
+                                <td><Button color="danger" onClick={()=> this.deleteItem(item.id)}>X</Button></td>
+                            </tr>
+
+                        )) :null }
+                    </tbody>
+                </Table>
             </div>
-        </div>
     )
 }}
 
