@@ -1,6 +1,6 @@
 
 .home-content {
-    padding: 15%;
+    margin-top: 20vh;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,9 +11,7 @@
 .bigBurger {
     height: 200px;
     padding: 20px;
-    
 } 
-/* colores y radios de los botones */
 
 
 

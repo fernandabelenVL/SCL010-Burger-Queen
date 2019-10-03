@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './OrderDetail.css';
 import db from '../FirestoreConfig'
-import { Table, Button, Row, Col, InputGroup, Input, Fade } from 'reactstrap';
+import { Table, Button, Row, Col, InputGroup, Input } from 'reactstrap';
 
 
 class OrderDetail extends Component {
@@ -117,6 +117,7 @@ class OrderDetail extends Component {
 render() {
     const { items, inputValue } = this.state;
 
+
     return (
         
         <div className='order-detail'>
@@ -124,8 +125,8 @@ render() {
                 <h4 className='order-title'>DETALLE DE LA ORDEN</h4>
             </div>
 
-            <Row>
-                    <Col xs='10'>
+            <Row className="add-element">
+                    <Col xs='8'>
                         <InputGroup>
                         <Input 
                         placeholder="Agregar un nuevo item"
@@ -134,29 +135,27 @@ render() {
                         />
                         </InputGroup>
                     </Col>
-                    <Col xs='2'>
+                    <Col>
                         <div className="text-right">
-                            <Button color="info" onClick={this.action}>
+                            <button className='btn-add' onClick={this.action}>
                                 {/* Si si edita el boton dice editar, sino agregar */}
-                                {this.state.edit ? 'Editar' : 'Agregar'}
-                            </Button>
+                                {this.state.edit ? 'EDITAR' : 'AGREGAR'}
+                            </button>
                         </div>
                     </Col>
                 </Row>
                 
                 {/* mostrar mensaje para antes de Eliminar */}
-                <Fade in={this.state.fadein} tag="h6" className= "mt-3 text-center text-success">
+                {/* <Fade in={this.state.fadein} tag="h6" className= "mt-3 text-center text-success">
                     {this.state.message}
-                </Fade>
-
-                <br></br>
+                </Fade> */}
 
                 <Table hover className="text-center">
                     <tbody>
                         { items && items!== undefined ? items.map((item, key) => (
                             <tr key = {key}>
                                 <td>{item.data.item}</td> 
-                                <td><Button color="danger" onClick={()=> this.deleteItem(item.id)}>X</Button></td>
+                                <td><Button color="danger btnCircle" onClick={()=> this.deleteItem(item.id)}>X</Button></td>
                             </tr>
 
                         )) :null }

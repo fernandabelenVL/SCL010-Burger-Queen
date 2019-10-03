@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from "../components/Navigation";
-import RecordsCard from '../components/RecordsCard'
+import PendingCard from '../components/PendingCard'
 import { Container, Col, Row} from 'reactstrap';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import DatePicker from "react-datepicker";
@@ -53,35 +53,27 @@ class Pending extends Component {
                 </Container>
 
                 <Container className='command-list-pending'>
-                    <RecordsCard
+                    <PendingCard
                         client="Camila Perez"
                         table="4"
-                        hour="18:56"
+                        hour="17:45"
                         date="13/09/2019"
                         totalPrice="$3.800"
                     />
-                    <RecordsCard
+                    <PendingCard
                         client="Rodrigo Morales"
                         table="15"
-                        hour="18:34"
+                        hour="18:45"
                         date="13/09/2019"
-                        totalPrice="$2.800"
+                        totalPrice="$3.800"
                     />
-                    <RecordsCard
+                    <PendingCard
                         client="Maritza Reyes"
                         table="7"
-                        hour="18:03"
+                        hour="19:45"
                         date="13/09/2019"
-                        totalPrice="$4.800"
+                        totalPrice="$3.800"
                     />
-                    <RecordsCard
-                        client="Felipe Gonzales"
-                        table="7"
-                        hour="17:56"
-                        date="13/09/2019"
-                        totalPrice="$4.800"
-                    />
-
                 </Container>
             </div>
         )

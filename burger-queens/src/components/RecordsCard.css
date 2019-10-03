@@ -1,0 +1,9 @@
+.records-container {
+    background: #f3f3f3;
+    text-align: left;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    margin-bottom: 80px;
+}

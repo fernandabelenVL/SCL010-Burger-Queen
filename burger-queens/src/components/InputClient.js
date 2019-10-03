@@ -42,6 +42,7 @@ action = () => {
         this.message('error');
     })}
 
+
 getTodo = (id) => {
 let docRef  = db.collection('Orders').doc(id);
 docRef.get().then((doc) => {
@@ -53,6 +54,7 @@ docRef.get().then((doc) => {
         })
     } else {
         console.log('El documento no existe');
+
 
     }
 }).catch((error) => {
